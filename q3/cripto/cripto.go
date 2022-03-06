@@ -1,7 +1,6 @@
-package main
+package cripto
 
 import (
-	"fmt"
 	"math"
 	"strings"
 )
@@ -60,12 +59,4 @@ func (s String) Cripto() string {
 	raizString := int(math.RoundToEven(math.Sqrt(tamString))) //Extrai a raiz do Tamanho da String e arredonda
 
 	return criarGrid(raizString, stringUnificada)
-}
-
-func main() {
-	var t String = "tenha um bom dia"
-	saida := String.Cripto(t)
-
-	fmt.Println(saida)
-
 }

@@ -3,13 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/rodolfoalvesg/Desafio-Cap/q1/mediana"
+	"q1/mediana"
 )
 
 func main() {
 	listaPar := &mediana.Lista{9, 2, 1, 4, 6, 8, 3, 5, 7, 10}
+	listaImpar := &mediana.Lista{9, 2, 1, 4, 6, 8, 3, 5, 7}
 
-	mediana := listaPar.Mediana()
+	medianaPar := listaPar.Mediana()
+	medianaImpar := listaImpar.Mediana()
 
-	fmt.Println(mediana)
+	fmt.Println(medianaPar, " ", medianaImpar)
 }
