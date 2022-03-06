@@ -1,9 +1,15 @@
 # Desafio-Cap
 Exercício proposta na Lista da CAP.
 
-##  Tecnologia utilizada
- - Golang
+##  Tecnologias e Recursos necessários para exercução
+ - Golang version go1.17.8
+ - Terminal ou uma IDE
 
+## Comandos necessários para execução
+- Primeiramente, faz-se necessário que você esteja na pacote/diretório a qual se deseja executar.
+   - Execução Normal : `go run nomedoarquivo.go` 
+   - Execução do Teste: `go test`
+   - Execução de dimensão do Teste: `go test -cover`
 
 ##  Lista de Questões
 ### Questão 01
@@ -25,6 +31,13 @@ Exemplo:
       - A lista atendendo ao critério, é realizada operação de cálculo e retorna o valor da mediana.
      
  - `mediana_test.go`
-      - Aqui temos a implementação do teste por TDD, de modo a otimizar nossos testes com maior número de variáveis de possibilidades.
-      - 
+      - Aqui temos a implementação de testes por TDD (test Driven Development)
+      - Lista contém a quantidade de elementos PAR: `var listaPar = []int{9, 2, 1, 4, 6, 8, 3, 5, 7, 10}`
+      - Podemos passar a lista com os valores de testes, junto ao valor esperado, conforme formato: `{listaPar, 6.5}`
 
+Entradas Utilizadas: 
+ - `var listaPar = []int{9, 2, 1, 4, 6, 8, 3, 5, 7, 10}`
+ - `var listaImpar = []int{9, 2, 1, 4, 6, 8, 3, 5, 7}`
+
+Saídas Obtidas: 
+ - Medianas: `6.5` e `5` respectivamente.
