@@ -1,13 +1,14 @@
 # Desafio-Cap
 Exercício proposta na Lista da CAP.
 
-##  Tecnologias e Recursos necessários para exercução
+##  Tecnologias e Recursos necessários para execução
  - Golang version go1.17.8
  - Terminal ou uma IDE
 
 ## Comandos necessários para execução
-- Primeiramente, faz-se necessário que você esteja na pacote/diretório a qual se deseja executar.
-   - Execução Normal : `go run nomedoarquivo.go` 
+
+- Entre no diretório da questão desejada para Execução Normal : `go run main.go`
+- Para testes, faz-se necessário que você esteja na pacote/diretório a qual se deseja executar. 
    - Execução do Teste: `go test`
    - Execução de dimensão do Teste: `go test -cover`
 
